@@ -28,3 +28,10 @@ func main() {
 	wg.Wait()
 	fmt.Println("done..")
 }
+
+// return from function
+// value of i: 1
+// done..
+
+// bt khi function return , all the variables inside function are gone as well, but here the runtime clever engouh to know goroutine
+//  still refers to this variable so the runtime copy the variable to heap , so goroutine can access this variable
